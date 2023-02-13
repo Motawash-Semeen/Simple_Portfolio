@@ -1,15 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"  href="./css/style.css">
-</head>
-<body>
-    
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Livvic:wght@200;300;400;500;600;700;900&display=swap"
+         rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <!-- Desktop Menu Starts -->
+         <div class="header-inner hide-mobile ">
+            <!-- MENU STARTS -->
+            <div class="mail">
+               <p>
+                  Email :
+                  <span>contact@steven.net</span>
+               </p>
+            </div>
 
-    <script src="./js/custom.js"></script>
-</body>
+            <!-- MENU ENDS -->
+            <!-- FREELANCE STARTS -->
+
+            <!-- FREELANCE ENDS -->
+         </div>
+         <div class="menu_main">
+            <nav class="navigation">
+               <ul>
+                  <li class="list active">
+                     <a>
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">Home</span>
+                     </a>
+                  </li>
+                  <li class="list">
+                     <a>
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="text">Profile</span>
+                     </a>
+                  </li>
+                  <li class="list">
+                     <a>
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="text">Messages</span>
+                     </a>
+                  </li>
+                  <li class="list">
+                     <a>
+                        <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+                        <span class="text">Photos</span>
+                     </a>
+                  </li>
+                  <li class="list">
+                     <a>
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="text">Settings</span>
+                     </a>
+                  </li>
+                  <div class="indicator"></div>
+               </ul>
+            </nav>
+         </div>
+         <!-- Desktop Menu Ends -->
+         <!-- Mobile Menu Starts -->
+         <nav class="mobile-menu">
+            <div id="menuToggle">
+               <input type="checkbox" id="checkboxmenu">
+               <span></span>
+               <span></span>
+               <span></span>
+               <ul class="list-unstyled" id="menu">
+                  <li><a href="#home"><span>Home</span></a></li>
+                  <li><a href="#my-photo"><span>About</span></a></li>
+                  <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                  <li><a href="#contact"><span>Contact</span></a></li>
+                  <li><a href="#blog"><span>Blog</span></a></li>
+               </ul>
+            </div>
+         </nav>
+         <!-- Mobile Menu Ends -->
+      </header>
+      <main class="d-flex"  class="mCustomScrollbar content" data-mcs-theme="dark">
+         <section id="back">
+            <div class="heading">
+               <h1>
+                  <span>
+                     <span class="head_txt">
+                        Hello<span class="head_yellow">.</span>
+                     </span>
+                  </span>
+                  <span class="d-flex">
+                     <span class="head_txt w-90">
+                        I am
+                     </span>
+                     <span class="intro w-10">
+                        Front-end Developer with 7 years experience based in
+                        London
+                     </span>
+                  </span>
+                  <span>
+                     <span class="head_txt">
+                        Steven
+                     </span>
+                  </span>
+               </h1>
+            </div>
+         </section>
+
+         <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section_title">
+                About Me
+            </h2>
+            <div class="about_container container grid">
+                <img src="./assestes/images/my_project.jpg" alt="" class="about_img">
+                <div class="about_data">
+                    <h3 class="about_heading">Hi, I,m Motawash Semeen, Based in Bangladesh</h3>
+                    <p class="about_description">Web developer, with extensive knowledge and years of experience, working in the web technologies and UI/UX design, developing quality work.</p>
+                    <div class="about_info grid">
+                        <div class="about_box">
+                            <i class="uil uil-award about_icon">
+                            </i>
+                            <h3 class="about_title">
+                                Experience
+                            </h3>
+                            <span class="about_subtitle">
+                                3+ Years
+                            </span>
+                        </div>
+                        <div class="about_box">
+                            <i class="uil uil-suitcase-alt about_icon">
+                            </i>
+                            <h3 class="about_title">
+                                Completed
+                            </h3>
+                            <span class="about_subtitle">
+                                48+ Projects
+                            </span>
+                        </div>
+                        <div class="about_box">
+                            <i class="uil uil-headphones about_icon">
+                            </i>
+                            <h3 class="about_title">
+                                Support
+                            </h3>
+                            <span class="about_subtitle">
+                                Online 24/7
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button"> <i class="uil uil-navigator button_icon"></i>Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+      </main>
+
+      <!--https://ionic.io/ionicons-->
+      <script type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+      <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="./js/custom.js"></script>
+   </body>
 </html>
