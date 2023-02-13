@@ -368,6 +368,45 @@ header .header-inner .menu ul li span:before {
 
 
 /*===== About Section =====*/
+.section {
+  padding: 6.5rem 0 2rem;
+}
+.section_title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+.section_title::before {
+  content: attr(data-heading);
+  display: block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--skin-color);
+}
+.grid {
+  display: grid;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.about_img {
+  width: 480px;
+  border-radius: 0.75rem;
+  justify-content: center;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 .about_container
 {
     grid-template-columns: repeat(2, 1fr);
