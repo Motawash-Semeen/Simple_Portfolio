@@ -97,7 +97,10 @@ p {
 
 /* COMMON CSS END */
 /* Active Link */
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 #back {
   color: white;
   height: 100vh;
