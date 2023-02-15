@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motawash Semeen</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />
     <!--========== UNICONS ==========-->
     <link
       rel="stylesheet"
@@ -47,7 +46,7 @@
         <nav class="navigation">
           <ul>
             <li class="list active">
-              <a>
+              <a href="#back">
                 <span class="icon"
                   ><ion-icon name="home-outline"></ion-icon
                 ></span>
@@ -55,7 +54,7 @@
               </a>
             </li>
             <li class="list">
-              <a>
+              <a href="#about">
                 <span class="icon"
                   ><ion-icon name="person-outline"></ion-icon
                 ></span>
@@ -63,7 +62,7 @@
               </a>
             </li>
             <li class="list">
-              <a>
+              <a href="#qualification">
                 <span class="icon"
                   ><ion-icon name="chatbubble-outline"></ion-icon
                 ></span>
@@ -71,7 +70,7 @@
               </a>
             </li>
             <li class="list">
-              <a>
+              <a href="#work">
                 <span class="icon"
                   ><ion-icon name="camera-outline"></ion-icon
                 ></span>
@@ -79,7 +78,7 @@
               </a>
             </li>
             <li class="list">
-              <a>
+              <a href="#services">
                 <span class="icon"
                   ><ion-icon name="settings-outline"></ion-icon
                 ></span>
@@ -91,35 +90,9 @@
         </nav>
       </div>
       <!-- Desktop Menu Ends -->
-      <!-- Mobile Menu Starts -->
-      <nav class="mobile-menu">
-        <div id="menuToggle">
-          <input type="checkbox" id="checkboxmenu" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul class="list-unstyled" id="menu">
-            <li>
-              <a href="#home"><span>Home</span></a>
-            </li>
-            <li>
-              <a href="#my-photo"><span>About</span></a>
-            </li>
-            <li>
-              <a href="#portfolio"><span>Portfolio</span></a>
-            </li>
-            <li>
-              <a href="#contact"><span>Contact</span></a>
-            </li>
-            <li>
-              <a href="#blog"><span>Blog</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Mobile Menu Ends -->
+     
     </header>
-    <main class=" mCustomScrollbar content" id="content-1" data-mcs-theme="dark">
+    <main class="  content" >
       <section id="back">
         <div class="heading">
           <h1>
@@ -931,6 +904,43 @@
           </div>
         </div>
       </section>
+
+      <!--===== FOOTER =====-->
+        
+      <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">MS Chowdhury</h1>
+                    <span class="footer_subtitle">Frontend Developer</span>
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#services" class="footer_link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer_link">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer_socials">
+                    <a href="#facebook" target="_blank" class="footer_social">
+                        <i class="uil uil-facebook-f"></i> 
+                     </a>
+                     <a href="#instra" target="_blank" class="footer_social margin">
+                         <i class="uil uil-instagram"></i> 
+                     </a>
+                     <a href="#twitter" target="_blank" class="footer_social">
+                         <i class="uil uil-twitter"></i> 
+                     </a>
+                </div>
+            </div>
+            <hr class="hr">
+            <p class="footer_copy">&#169; MS Chowdhury. All righter reserved</p>
+        </div>
+    </footer>
     </main>
 
     <!--https://ionic.io/ionicons-->
@@ -944,7 +954,6 @@
     ></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="./js/custom.js"></script>
   </body>
 </html>
