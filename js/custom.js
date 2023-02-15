@@ -1,3 +1,33 @@
+
+
+(function($){
+    $(window).on("load",function(){
+        
+        var amount=Math.max.apply(Math,$("#content-1 section").map(function(){return $(this).outerWidth(true);}).get());
+        
+        $("#content-1").mCustomScrollbar({
+            axis:"x",
+            theme:"inset",
+            advanced:{
+                autoExpandHorizontalScroll:true
+            },
+            scrollButtons:{
+                enable:true,
+                scrollType:"stepped"
+            },
+            keyboard:{scrollType:"stepped"},
+            snapAmount:amount,
+            mouseWheel:{scrollAmount:amount}
+        });
+        
+    });
+})(jQuery);
+
+
+
+
+
+
 const list = document.querySelectorAll('.list');
 
 function activeLink() {
@@ -10,19 +40,6 @@ function activeLink() {
 list.forEach((item) =>
 item.addEventListener('click',activeLink))
 
-// (function($){
-//     $(window).on("load",function(){
-//         $(".content").mCustomScrollbar();
-//     });
-// })(jQuery);
-
-// $(".content").mCustomScrollbar({
-//     axis:"y" // horizontal scrollbar
-// });
-
-// $(".content").mCustomScrollbar({
-//     theme:"dark"
-// });
 
 
 /*=============== SHOW SIDEBAR ===============*/
@@ -74,16 +91,6 @@ const tabs = document.querySelectorAll('[data-target]'),
             
         })
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-var mixer = mixitup('.work_container', {
-    selectors: {
-        target: '.work_card'
-    },
-    animation: {
-        duration: 300
-    }
-});
-// CommonJS
 
 
 
@@ -97,7 +104,9 @@ linkWork.forEach(l => l.addEventListener("click",activeWork))
 
 /*===== Work Popup =====*/
 document.addEventListener("click", (e) => {
+    console.log("cicked")
     if(e.target.classList.contains("work_button")){
+        
         toggleProtfolioPopup();
         protfolioItemDetails(e.target.parentElement);
     }
@@ -204,3 +213,16 @@ function navHighlighter()
 
 /*=============== SHOW SCROLL UP ===============*/
 AOS.init();
+
+
+
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+var mixer = mixitup('.work_container', {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+// CommonJS

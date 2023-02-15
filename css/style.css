@@ -462,11 +462,12 @@ img {
     font-size: var(--smaller-font-size);
 }
 main{
-  width: 700vw;
+  width: 100vw;
   height: 95vh;
+
+}
+#content-1{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #about, #skills, #work, #services,#contact, #testi {
