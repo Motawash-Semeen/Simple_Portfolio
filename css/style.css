@@ -96,11 +96,15 @@ p {
 }
 
 /* COMMON CSS END */
-
+/* Active Link */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 #back {
   color: white;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,18 +185,20 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
 }
 header .mobile-menu {
   display: none;
 }
 body {
   height: 100%;
+  width: 100%;
   font-family: "Livvic", sans-serif;
   font-size: 18px;
   background-color: #0b0b0b;
   margin: 0;
   color: #fff;
+  display: block;
 }
 header .header-inner {
   display: flex;
@@ -200,22 +206,7 @@ header .header-inner {
   padding: 30px;
   opacity: 1;
 }
-/* .home .cta, .nav-item, header .header-inner .menu ul li span:before, .mCSB_dragger_bar:before, .custom-btn:before, .line:before, .nav-item:hover, .category, .clients .swiper-pagination-bullet.swiper-pagination-bullet-active, .portfolio .single-item .swiper-pagination-bullet.swiper-pagination-bullet-active, .timeline ol li > div > div > span, .timeline ol li:not(:last-child)::after, .blog-page .page-item.active .page-link, .blog-page .page-item .page-link:hover {
-    background-color: #ffb400;
-}
 
-header .header-inner .menu ul {
-    display: flex;
-    font-family: 'Livvic', sans-serif;
-    font-size: 18px;
-}
-header .header-inner .menu ul li:not(:last-child) {
-    margin-right: 35px;
-}
-header .header-inner .menu ul li {
-    font-size: 18px;
-    color: white;
-} */
 
 header .header-inner .mail p {
   margin: 0;
@@ -227,25 +218,7 @@ header .header-inner .mail p {
   font-size: 18px;
   font-weight: 500;
 }
-/* header .header-inner .menu ul li span {
-    cursor: pointer;
-    transition: .3s;
-    position: relative;
-    font-weight: 500;
-    color: white;
-}
-header .header-inner .menu ul li span:hover:before, header .header-inner .menu ul li span.active:before {
-    top: -34px;
-}
-header .header-inner .menu ul li span:before {
-    position: absolute;
-    width: 100%;
-    height: 15px;
-    content: '';
-    top: -49px;
-    border-radius: 0 0 4px 4px;
-    transition: .3s;
-} */
+
 
 .menu_main {
   display: flex;
@@ -469,10 +442,14 @@ main{
 #content-1{
   display: flex;
 }
+section{
+  display: block;
+  width: 100%;
+}
 
 #about, #skills, #work, #services,#contact, #testi {
-  width: 100vw;
-  height: 100vh;
+  display: block;
+  width: 100%;
 }
 
 #about .button {

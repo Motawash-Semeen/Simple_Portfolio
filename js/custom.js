@@ -1,33 +1,5 @@
 
 
-(function($){
-    $(window).on("load",function(){
-        
-        var amount=Math.max.apply(Math,$("#content-1 section").map(function(){return $(this).outerWidth(true);}).get());
-        
-        $("#content-1").mCustomScrollbar({
-            axis:"x",
-            theme:"inset",
-            advanced:{
-                autoExpandHorizontalScroll:true
-            },
-            scrollButtons:{
-                enable:true,
-                scrollType:"stepped"
-            },
-            keyboard:{scrollType:"stepped"},
-            snapAmount:amount,
-            mouseWheel:{scrollAmount:amount}
-        });
-        
-    });
-})(jQuery);
-
-
-
-
-
-
 const list = document.querySelectorAll('.list');
 
 function activeLink() {
@@ -146,26 +118,26 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*=============== SWIPER TESTIMONIAL ===============*/
-var swiper = new Swiper(".testimonials_container", {
-    spaceBetween: 24,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-        438: {
-          slidesPerView: 1,
-        },
-        580: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 2,
-        },
-      },
-  });
+// var swiper = new Swiper(".testimonials_container", {
+//     spaceBetween: 24,
+//     loop: true,
+//     grabCursor: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     breakpoints: {
+//         438: {
+//           slidesPerView: 1,
+//         },
+//         580: {
+//           slidesPerView: 2,
+//         },
+//         1024: {
+//           slidesPerView: 2,
+//         },
+//       },
+//   });
 
 /*=============== INPUT ANIMATION ===============*/
 const inputs = document.querySelectorAll(".input");
@@ -202,11 +174,13 @@ function navHighlighter()
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
         {
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-link")
+            document.querySelector('.menu_main a[href*=' + sectionId + ']').classList.add("active")
+           
+
         }
         else
         {
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-link")
+            document.querySelector('.menu_main a[href*=' + sectionId + ']').classList.remove("active")
         }
     })
 }
